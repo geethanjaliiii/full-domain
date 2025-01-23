@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <p id="demo"></p>
+    <p class="hi">one</p>
+    <p class="hi">two</p>
+    <ol>
+      <li>wow</li>
+      <li>mow</li>
+    </ol>
+  </head>
+  <body>
+    <script>
+      const items= document.querySelectorAll('.hi')//Select all elements with the class item:
+      console.log(items);
+      document.getElementById("demo").innerHTML='hii'
+      //2. Add or Remove a Class from an Element
+      const listItems=document.querySelectorAll('li')
+      listItems.forEach(item=>
+        item.classList.add('highlight')
+      )
+      //3.Change the Content of an Element Dynamically
+const paragraph=document.querySelector('p')
+if(paragraph){
+    paragraph.textContent='hello world'
+}
+      //4.Create and Append Elements to the DOM
+      const ul=document.querySelector('ul')
+      if(ul){
+        const newli=document.createElement('li');
+        newli.textContent='new list item'
+        ul.appendChild(newli)
+      }
+    </script>
+  </body>
+</html>
