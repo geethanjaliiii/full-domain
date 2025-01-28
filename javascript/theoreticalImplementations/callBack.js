@@ -27,3 +27,9 @@ function sayGoodBye(){
 }
 
 delayedgreet('felba',sayGoodBye)
+
+function sum(a,b){
+    return a+b
+}
+let hi=_.curry(sum)
+console.log(hi(1)(2) );
