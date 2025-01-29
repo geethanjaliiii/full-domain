@@ -136,4 +136,6 @@
     console.log()
 }
 const array=[1,2,3,3,4]
-halo('array',array,1,'kk')
+halo('array',array,1,'kk');
+
+console.log(array.__proto__);
